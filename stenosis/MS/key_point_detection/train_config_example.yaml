@@ -1,0 +1,13 @@
+train_tag: 'example'
+cuda_device: '0'
+batch_size: 48
+learning_rate: 1.e-4
+total_epoch: 500
+steps: [20, 60, 140, 300]
+seed: 0
+
+train_path: ''
+valid_path: ''
+
+num_workers: 16
+weight_decay: 5.e-4

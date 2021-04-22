@@ -1,0 +1,28 @@
+base_lr: 1.0e-4
+experiment_name: mr_a4c
+loader_class: RgLoader
+loader_params:
+  batch_size: 4
+  dataset_path: ./mr_dataset.pkl
+  win_size: 32
+  num_workers: 4
+log_dir: ./mr
+loss_class: RgLoss
+loss_params: {}
+seg_metric_class: seg
+cls_metric_class: cls
+kf_metric_class: kf
+model_class: UnetRCNN
+model_key: mr_a4c
+model_params:
+  num_classes: 3
+  win_size: 32
+optim_key: adam
+resume_path: null
+best_model_path: null
+start_epoch: 0
+total_epoch: 100
+use_cuda: true
+weight_decay: 0.0001
+restart: false
+mode: train
